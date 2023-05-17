@@ -55,7 +55,7 @@ const styless = StyleSheet.create({
     wrap: {
         width: WINDH * 0.99,
         margin: 10,
-        height: HEING * 0.79,
+        height: HEING * 0.79 ,
         overflow: 'hidden',
         borderRadius: 20,
     }
