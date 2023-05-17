@@ -23,7 +23,7 @@ export default function Home() {
             <Swper_block data={data} />
             <Text style={styles.text} >События в ближайшие дни</Text>
             <Card data={data} />
-            <Text style={styles.text}>В кино на этой неделе</Text>
+            <Text style={styles.text}>В кино на этой неделе.</Text>
             <Card data={data} />
         </ScrollView>
     )
