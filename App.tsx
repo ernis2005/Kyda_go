@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native';
-import React from 'react'
+import { View, Text, Alert } from 'react-native';
+import React, { useEffect } from 'react'
+import axios from 'axios';
+
+
 
 export default function App() {
+ 
+
+
   return (
     <View>
-      <Text>ernis</Text>
+      <Text>
+     hello asdsddsdsadsdsdsdsdsadd
+      </Text>
     </View>
   )
 }
