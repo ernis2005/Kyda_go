@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import {  StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     block:{
         position: 'absolute', bottom: 0, fontSize:20, paddingBottom: 10, paddingLeft: 10,height:'100%',  zIndex: 33, width: '100%', backgroundColor: "#0000003b" 
