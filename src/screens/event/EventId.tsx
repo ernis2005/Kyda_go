@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, Image } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { styles } from '../styles/EventId.style';
+import { styles } from './EventId.style';
 export default function EventId() {
     const [first, setfirst] = useState<any>()
     const [Loding, setLoding] = useState(true)

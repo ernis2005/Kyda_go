@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button, Dimensions, FlatList, Image, RefreshControl, SafeAreaView, StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native';
 const WINDH = Dimensions.get("window").width;
 const HEING = Dimensions.get("window").height;
-import { styles } from '../../styles/Swper_block.style';
+import { styles } from './Swper_block.style';
 export default function Swper_block({ data }:any) {
     let [loding, setloding] = useState(true)
     useEffect(() => {

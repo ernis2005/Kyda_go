@@ -1,6 +1,6 @@
 
 import { Button, FlatList, Image, RefreshControl, StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native';
-import { styles } from '../../styles/Card.style';
+import { styles } from './Card.style';
 import { useEffect, useState } from 'react';
 export default function Card({ data, }:any) {
   console.log(data,'erns');
