@@ -1,10 +1,14 @@
 
 import { useEffect, useState } from 'react';
 import { Button, Dimensions, FlatList, Image, RefreshControl, SafeAreaView, StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native';
-const WINDH = Dimensions.get("window").width;
+const WINDH:any = Dimensions.get("window").width;
+console.log(WINDH,"ernis");
+
 const HEING = Dimensions.get("window").height;
-import { styles } from './Swper_block.style';
-export default function Swper_block({ data }:any) {
+import { styles } from './Swiper_block.style';
+export default function Swper_block({ data }:any) { 
+  let  [Wind,setWIND]= useState<any>()
+   
     let [loding, setloding] = useState(true)
     useEffect(() => {
         setInterval(() => {

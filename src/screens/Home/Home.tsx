@@ -2,9 +2,10 @@ import { View, Text, ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Card from '../../components/Cards/Card';
-import Swper_block from '../../components/Swper/Swper_block';
+import Swper_block from '../../components/Swiper/Swiper_block';
 import { styles } from './Home.style';
-export default function Home() {
+
+export default function Home({navigation }:any) {
     let [data, setData] = useState<any>()
     let getData = async () => {
         const res = await axios.get(
@@ -19,12 +20,12 @@ export default function Home() {
     }, [])
     return (
         <ScrollView style={{ flex: 1 }}>
-
+      
             <Swper_block data={data} />
             <Text style={styles.text} >События в ближайшие дни</Text>
-            <Card data={data} />
+            <Card data={data} navigation={navigation} />
             <Text style={styles.text}>В кино на этой неделе.</Text>
-            <Card data={data} />
+            <Card data={data} navigation={navigation} />
         </ScrollView>
     )
 }

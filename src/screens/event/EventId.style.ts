@@ -29,6 +29,16 @@ export const styles = StyleSheet.create({
 
         borderRadius: 30
     },
+    Performers_bock2:{
+       
+      
+        padding: 5,
+        margin: 10,
+        display: 'flex', 
+         flexDirection: 'row', gap: 20,
+
+        borderRadius: 30
+    },
     Performers_image: {
         width: 40,
         height: 40,
