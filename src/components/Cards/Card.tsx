@@ -31,10 +31,7 @@ export default function Card({ data,navigation }:any) {
                         <Image style={styles.image}
                             source={{ uri: `https://image.tmdb.org/t/p/w500${item.poster_path}` }}
                         />):null}
-                          {item.file_path ?( 
-                        <Image style={styles.image2}
-                            source={{ uri: `https://image.tmdb.org/t/p/w500${item.file_path}` }}
-                        />):null}
+                          
                       
                     </View>
                  ):null

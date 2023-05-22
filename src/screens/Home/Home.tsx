@@ -1,9 +1,10 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, Image, FlatList, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Card from '../../components/Cards/Card';
 import Swper_block from '../../components/Swiper/Swiper_block';
 import { styles } from './Home.style';
+
 
 export default function Home({navigation }:any) {
     let [data, setData] = useState<any>()
@@ -15,6 +16,7 @@ export default function Home({navigation }:any) {
         setData(data)
 
     }
+    
     useEffect(() => {
         getData()
     }, [])
@@ -26,6 +28,18 @@ export default function Home({navigation }:any) {
             <Card data={data} navigation={navigation} />
             <Text style={styles.text}>В кино на этой неделе.</Text>
             <Card data={data} navigation={navigation} />
+           {/* //// <Add/> */}
+           
         </ScrollView>
     )
 }
+
+
+
+
+interface ImageItem {
+  id: string;
+  source: number;
+}
+
+
